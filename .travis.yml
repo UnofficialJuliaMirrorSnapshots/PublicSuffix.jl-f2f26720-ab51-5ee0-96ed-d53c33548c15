@@ -1,0 +1,14 @@
+language: julia
+julia:
+  - 0.3
+  - 0.4
+  - 0.5
+  - nightly
+notifications:
+  email: false
+#script:
+#  - julia -e 'Pkg.init(); run(`ln -s $(pwd()) $(Pkg.dir("PublicSuffix"))`); Pkg.pin("PublicSuffix"); Pkg.resolve()'
+#  - julia -e 'using PublicSuffix; @assert isdefined(:PublicSuffix); @assert typeof(PublicSuffix) === Module'
+#  - julia ./test/test.jl
+#  - julia ./test/test_psl.jl
+
